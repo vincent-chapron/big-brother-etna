@@ -1,0 +1,9 @@
+fos_user:
+    db_driver: orm
+    firewall_name: main
+    user_class: AppBundle\Entity\User\User
+    registration:
+        confirmation:
+            enabled: true
+        form:
+            type: app_user_registration

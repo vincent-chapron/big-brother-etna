@@ -1,0 +1,31 @@
+AppBundle\Entity\User\User:
+    guest:
+        username: "guest"
+        email: "guest@guest.fr"
+        enabled: 1
+        salt: "584whc1du2888coow8oww400k0kwogs"
+        password: "$2y$13$bEjKRmTIs7TjvsKmO7/Xs.zIVB4cQm8cjq3/bJVvdo1MrejPLRiAm"
+        locked: 0
+        expired: 0
+        roles:
+            - "ROLE_USER"
+    admin:
+        username: "admin"
+        email: "admin@admin.fr"
+        enabled: 1
+        salt: "584whc1du2888coow8oww400k0kwogs"
+        password: "$2y$13$bEjKRmTIs7TjvsKmO7/Xs.zIVB4cQm8cjq3/bJVvdo1MrejPLRiAm"
+        locked: 0
+        expired: 0
+        roles:
+            - "ROLE_ADMIN"
+    super_admin:
+        username: "super_admin"
+        email: "super_admin@admin.fr"
+        enabled: 1
+        salt: "584whc1du2888coow8oww400k0kwogs"
+        password: "$2y$13$bEjKRmTIs7TjvsKmO7/Xs.zIVB4cQm8cjq3/bJVvdo1MrejPLRiAm"
+        locked: 0
+        expired: 0
+        roles:
+            - "ROLE_SUPER_ADMIN"

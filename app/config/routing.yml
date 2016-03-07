@@ -1,0 +1,18 @@
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+
+NelmioApiDocBundle:
+    resource: "@NelmioApiDocBundle/Resources/config/routing.yml"
+    prefix:   /doc
+
+api_login_check:
+    path: /login_check
+
+api_presence:
+    resource: "@AppBundle/Controller/PresenceController.php"
+    type:     rest
+    prefix:   /api
