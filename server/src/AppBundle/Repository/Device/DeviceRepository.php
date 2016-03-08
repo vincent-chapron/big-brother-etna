@@ -1,6 +1,6 @@
 <?php
 
-namespace AppBundle\Repository\User;
+namespace AppBundle\Repository\Device;
 
 /**
  * DeviceRepository

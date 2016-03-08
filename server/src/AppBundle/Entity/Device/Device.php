@@ -1,6 +1,6 @@
 <?php
 
-namespace AppBundle\Entity\User;
+namespace AppBundle\Entity\Device;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
@@ -21,9 +21,15 @@ class Device
     protected $id;
 
     /**
-     * @ORM\Column(name="beacon_uuid", type="guid")
+     * @ORM\Column(name="device_id", type="string")
      */
-    protected $beaconUuid;
+    protected $deviceId;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\User\User")
+     * @ORM\JoinColumn(name="user_id", referencedColumnName="id")
+     */
+    protected $owner;
 
     /**
      * Get id
@@ -34,18 +40,34 @@ class Device
     }
 
     /**
-     * @return mixed
+     * @return string
      */
-    public function getBeaconUuid()
+    public function getDeviceId()
     {
-        return $this->beaconUuid;
+        return $this->deviceId;
     }
 
     /**
-     * @param mixed $beaconUuid
+     * @param string $deviceId
      */
-    public function setBeaconUuid($beaconUuid)
+    public function setDeviceId($deviceId)
     {
-        $this->beaconUuid = $beaconUuid;
+        $this->deviceId = $deviceId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getOwner()
+    {
+        return $this->owner;
+    }
+
+    /**
+     * @param mixed $owner
+     */
+    public function setOwner($owner)
+    {
+        $this->owner = $owner;
     }
 }
