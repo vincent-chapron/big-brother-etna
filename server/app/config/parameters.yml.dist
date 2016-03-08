@@ -11,7 +11,7 @@ parameters:
     mysql_database_driver: pdo_mysql
     mysql_database_host: 127.0.0.1
     mysql_database_port: 3306
-    mysql_database_name: pro-inno-eatngo
+    mysql_database_name: cc-robo[name]
     mysql_database_user: root
     mysql_database_password: null
 
@@ -19,7 +19,7 @@ parameters:
     psql_database_driver: pdo_pgsql
     psql_database_host: 127.0.0.1
     psql_database_port: 5432
-    psql_database_name: pro-inno-eatngo
+    psql_database_name: cc-robo[name]
     psql_database_user: root
     psql_database_password: toto
 
